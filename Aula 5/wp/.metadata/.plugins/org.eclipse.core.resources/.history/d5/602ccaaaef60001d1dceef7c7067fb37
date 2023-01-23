@@ -1,0 +1,19 @@
+package padrao;
+
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+
+
+public class Salario {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite o nome do colaborador.");
+		String nome = scan.next();
+		float salario;
+		float fgts = (salario * 8  / 100);
+	}
+}

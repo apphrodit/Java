@@ -1,0 +1,17 @@
+package padrao;
+
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
+
+
+public class Salario {
+
+	public static void main(String[] args) {
+		String nome;
+		float salario;
+		float ajuste;
+		float salarioFinal;
+	}
+}

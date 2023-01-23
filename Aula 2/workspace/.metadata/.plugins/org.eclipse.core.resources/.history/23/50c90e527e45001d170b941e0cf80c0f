@@ -1,0 +1,26 @@
+package padrao;
+
+public class Gato {
+	
+	//Atributos
+	String nome;
+	String raca;
+	float peso;
+	
+	//Métodos
+	void miar() {
+		System.out.println("Miau");
+	}
+	
+	void ronronar() {
+		System.out.println("Ronronron");
+	}
+	
+	//Metodo Principal
+	public static void main(String[] args) {	
+	//cntrl+espaço preenchem oq vc está digitando.
+		System.out.println("Miau");
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package pesquisa;
+
+public class Pessoa {
+	
+	String nome;
+	String sobrenome;
+	int idade;
+	
+	Pessoa(){}
+	
+	Pessoa(String n, String sn, int id){
+		nome = n;
+		sobrenome = sn;
+		idade = id;
+	}
+
+	
+public String fasedavida() {
+	if(idade <= 12 ) {
+		return "Criança";
+		}else if(idade >= 12 && idade < 18){
+			return "Adolescente";
+		}else if (idade >= 18 && idade < 24){
+			return "Jovem";
+		}else if (idade >= 24 && idade < 59){
+			return "Adulto";
+		}else{ 
+			return "Idoso";	
+		}
+					
+	}
+}
+

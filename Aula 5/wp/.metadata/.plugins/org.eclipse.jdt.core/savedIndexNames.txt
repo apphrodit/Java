@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\Senai\João Victor Rodrigues Dias Fernandes\FPOO\Prof Wellington\Java\Aula 5\wp\.metadata\.plugins\org.eclipse.jdt.core
+3291311219.index
+2820330174.index
+1865797976.index
+3822070578.index
+3705590125.index

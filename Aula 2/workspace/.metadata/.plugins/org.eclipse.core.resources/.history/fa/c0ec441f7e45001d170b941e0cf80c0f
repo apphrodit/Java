@@ -1,0 +1,11 @@
+package padrao;
+
+public class Gato {
+
+	public static void main(String[] args) {	
+	//cntrl+espaço preenchem oq vc está digitando.
+		System.out.println("Alô Mundo!");
+
+	}
+
+}

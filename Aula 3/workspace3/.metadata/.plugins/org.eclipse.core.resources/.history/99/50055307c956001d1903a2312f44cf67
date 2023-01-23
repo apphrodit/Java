@@ -1,0 +1,33 @@
+package pesquisa;
+
+public class Pessoa {
+
+	String nome;
+	String sobrenome;
+	int idade;
+	String faseVetor[] = {"Criança", "Jovem", "Adulto", "Idoso"};
+
+	//Construtor Vazio
+	Pessoa() {}
+
+	//Construtor Cheio
+	Pessoa(String n, String sn, int id) {
+		nome = n;
+		sobrenome = sn;
+		idade = id;
+	}
+
+	public String fasedavida() {
+		if (idade <= 10) 
+			return "Criança";
+		 else if (idade < 25) 
+			return "Jovem";
+		 else if (idade < 60) 
+			return "Adulto";
+		 else
+			 return "Idoso";
+	}
+	public String toString() {
+		return nome +"\t" + sobrenome +"\t" + idade +"\t" + fasedavida();
+	}
+}

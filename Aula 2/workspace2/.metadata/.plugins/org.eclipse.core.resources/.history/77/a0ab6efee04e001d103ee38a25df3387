@@ -1,0 +1,84 @@
+package programa;
+
+import java.util.Scanner;
+
+import java.util.Locale;
+public class Main {
+	
+	public static void main(String[] args) {
+		Locale.setDefault(new Locale("pt", "BR"));
+		Scanner scan = new Scanner(System.in);
+	
+		Paciente pacientes[]= new Paciente[10];
+		float totImc = 0;
+		float totPeso = 0;
+		float totAltura = 0;
+		float maxPeso = 0, minPeso = 1000;
+		int magro = -1, obeso = -1;
+		float maxAltura = 0, minAltura = 3;
+		int alto = -1, baixo = -1;
+		int diags[] = {0, 0, 0, 0, 0, 0};
+		
+		System.out.println("Digite 10 nomes, pesos e alturas: ");
+		
+		for(int i = 0; i < 10; i++){
+			pacientes[i] = new Paciente(scan.next(),scan.nextFloat(),scan.nextFloat());
+		}
+		for(int i = 0; i < 10; i++){
+			System.out.println(pacientes[i].toString());
+			totImc += pacientes[i].imc();
+			totPeso += pacientes[i].peso;
+			totAltura += pacientes[i].altura;
+			if(pacientes[i].peso < minPeso) {
+				minPeso = pacientes[i].peso;
+				magro = i;
+			}
+			if(pacientes[i].peso > maxPeso) {
+				maxPeso = pacientes[i].peso;
+				obeso = i;
+			}
+			if(pacientes[i].altura < minAltura){
+				minAltura = pacientes[i].altura;
+				baixo = i;
+			}
+			if(pacientes[i].altura > maxAltura) {
+				maxAltura = pacientes[i].altura;
+				alto = i;
+			}
+			if(pacientes[i].diagnostico().equals("Subpeso Severo")){
+				diags[0]++;
+			}
+			if(pacientes[i].diagnostico().equals("Subpeso")) {
+				diags[1]++;
+			}
+			if(pacientes[i].diagnostico().equals("Normal")) {
+				diags[2]++;
+			}
+			if(pacientes[i].diagnostico().equals("Sobrepeso")) {
+				diags[3]++;
+			}
+			if(pacientes[i].diagnostico().equals("Obeso")) {
+				diags[4]++;
+			}
+			if(pacientes[i].diagnostico().equals("Obeso Mórbido")) {
+				diags[5]++;
+			}
+			
+		}
+		float mediaImc = totImc / 10f;
+		float mediaPeso = totPeso / 10f;
+		float mediaAltura = totAltura / 10f;
+		System.out.println("Estatísticas");
+		System.out.printf("Média IMC = %.2f", mediaImc);
+		System.out.printf("Média Peso = %.2f", mediaPeso);
+		System.out.printf("Média Altura = %.2f", mediaAltura);
+		System.out.printf("O paciente mais magro é: ",pacientes[magro].toString());
+		System.out.printf("O paciente mais obeso é: ",pacientes[obeso].toString());
+		System.out.printf("O paciente mais alto é: ",pacientes[alto].toString());
+		System.out.printf("O paciente mais baixo é:",pacientes[baixo].toString());
+		System.out.println("\n");
+		System.out.println("Quantidade De Pacientes Por Diagnóstico");
+		
+	}
+		
+}

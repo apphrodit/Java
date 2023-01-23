@@ -1,0 +1,19 @@
+package padrao;
+
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.util.Random;
+
+
+public class Salario {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+		String nome;
+		float salario = r.nextFloat();
+		float ajuste= r.nextFloat();
+		
+	}
+
+}

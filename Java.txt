@@ -1,0 +1,24 @@
+	
+
+
+
+	IDE (Integrate Developer Enviroment)
+		Ambiente de Desenvolvimento 
+			Integrado
+
+	Eclipse - Para estudos
+	NetBrains - Para Produção
+	--------------------------
+     IDE ( Estrutura(Biblioteca(Funções)))
+
+
+
+
+
+
+     -FullStack JR- (JR. por nn possuir expêriencia
+	Desktop
+	BackEnd
+	FrontEnd
+	Mobile
+	BD																

@@ -1,0 +1,26 @@
+package pesquisa;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main {
+	static Scanner scan = new Scanner(System.in);
+	static ArrayList<Pessoa> pessoas = new ArrayList<>();
+	static ArrayList<Estatistica> estatisticas = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		estatisticas.add(new Estatistica());
+		
+		System.out.println("Digite quantas pessoas estão interessadas: ");
+		int n = scan.nextInt();
+		System.out.println("Digite ou copie e cole a lista com: ");
+		System.out.println("nome , sobrenome, idade");
+	}
+	public static void leMetodo() {
+		pessoas.add(new Pessoa(scan.next(),scan.next(), scan.nextInt()));
+	}
+	public static void listar() {
+		for(Pessoa p: pessoas)
+			System.out.println(p.toString());
+		}
+	}
+	

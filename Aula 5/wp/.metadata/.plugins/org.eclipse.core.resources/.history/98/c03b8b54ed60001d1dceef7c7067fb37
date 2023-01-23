@@ -1,0 +1,16 @@
+package padrao;
+
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.util.Random;
+
+
+public class salario {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+		String nome
+	}
+
+}
